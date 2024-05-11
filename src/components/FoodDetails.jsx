@@ -12,7 +12,7 @@ export default function FoodDetails({ foodId }) {
 
   useEffect(() => {
     async function fetchFood() {
-      const res = await fetch(`${URL}?apiKey=${API_KEY2}`);
+      const res = await fetch(`${URL}?apiKey=${API_KEY}`);
       const data = await res.json();
       console.log(data);
       setFood(data);

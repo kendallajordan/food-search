@@ -10,7 +10,7 @@ export default function Search({ foodData, setFoodData }) {
   // Syntax of the useEffect hook
   useEffect(() => {
     async function fetchFood() {
-      const res = await fetch(`${URL}?apiKey=${API_KEY2}&query=${query}`);
+      const res = await fetch(`${URL}?apiKey=${API_KEY}&query=${query}`);
       const data = await res.json();
       console.log(data.results);
       setFoodData(data.results);
